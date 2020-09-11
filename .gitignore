@@ -34,6 +34,10 @@ build/
 .mvn/
 mvnw
 mvnw.cmd
-!/.mvn/
-!/mvnw
-!/mvnw.cmd
+
+/.mvn/wrapper/maven-wrapper.jar
+/.mvn/wrapper/maven-wrapper.properties
+/.mvn/wrapper/MavenWrapperDownloader.java
+/mvnw
+/mvnw.cmd
+/src/test/java/com/larimar/texaspoker/TexaspokerApplicationTests.java
