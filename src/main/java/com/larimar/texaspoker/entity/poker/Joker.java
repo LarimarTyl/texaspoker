@@ -5,16 +5,24 @@ package com.larimar.texaspoker.entity.poker;
  * @time 2020/9/11 周五 18:16
  */
 public enum Joker {
-    Red_Joker("JOKER"),
-    Black_Joker("joker");
+    Red_Joker("JOKER",15),
+    Black_Joker("joker",14);
 
     public String getValue() {
         return value;
     }
 
-    private final String value;
+    public Integer getSortNum() {
+        return sortNum;
+    }
 
-    Joker(String value) {
+    private final String value;
+    private final Integer sortNum;
+
+
+
+    Joker(String value, Integer sortNum) {
         this.value = value;
+        this.sortNum = sortNum;
     }
 }

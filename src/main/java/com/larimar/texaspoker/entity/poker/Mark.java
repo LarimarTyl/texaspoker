@@ -10,31 +10,37 @@ public enum Mark {
     /**
      * 黑桃
      */
-    spade("♠"),
+    spade("♠", 4),
     /**
      * 红心
      */
-    heart("♥"),
+    heart("♥", 3),
     /**
      * 方块
      */
-    diamond("♦"),
+    diamond("♦", 2),
     /**
      * 梅花
      */
-    club("♣"),
+    club("♣", 1),
     ;
-
-    Mark(String sign) {
-        this.sign = sign;
-    }
 
     /**
      * 牌色符号
      */
     private final String sign;
+    private final Integer sortNum;
 
-    public String getName() {
+    public String getSign() {
         return sign;
+    }
+
+    public Integer getSortNum() {
+        return sortNum;
+    }
+
+    Mark(String sign, Integer sortNum) {
+        this.sign = sign;
+        this.sortNum = sortNum;
     }
 }
